@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+dist/
+build/
+.next/
+out/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local runtime artifacts
+logs/
+outputs/
+uploads/
+apps/api/uploads/
+*.tsbuildinfo
+
+# Local env files
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+
+
+
+
+
+
+
+
+# --- local deploy/temp artifacts ---
+deploy.zip
+_deploy_staging/
+_tmp_deploy_worktree*/
+outputs/
+deliverable_*/
+*.log
+*.tsbuildinfo
+.next/
+node_modules/

@@ -1,0 +1,22 @@
+{
+  email admin@help-peak-ai.com
+}
+
+help-peak-ai.com, www.help-peak-ai.com {
+  encode gzip
+
+  # API: strip /api prefix
+  handle_path /api/* {
+    reverse_proxy api:3001
+  }
+
+  # If the browser requests /uploads/* directly, proxy to API as-is
+  handle /uploads/* {
+    reverse_proxy api:3001
+  }
+
+  # Everything else goes to Next.js
+  handle {
+    reverse_proxy web:3000
+  }
+}
