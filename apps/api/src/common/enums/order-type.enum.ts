@@ -1,0 +1,4 @@
+export enum OrderType {
+  MANUSCRIPT = 'MANUSCRIPT',
+  RECEIPT_REVIEW = 'RECEIPT_REVIEW',
+}
